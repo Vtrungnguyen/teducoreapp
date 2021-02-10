@@ -6,10 +6,13 @@ using System.Text;
 
 namespace TeduCoreApp.Data.Entities
 {
-    [Table("Footers")]
-    public class Footer : DomainEntity<string>
+    [Table("Sizes")]
+    public class Size : DomainEntity<int>
     {
-        [Required]
-        public string Content { set; get; }
+        [StringLength(250)]
+        public string Name
+        {
+            get; set;
+        }
     }
 }

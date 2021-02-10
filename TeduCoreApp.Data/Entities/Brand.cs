@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TeduCoreApp.Data.Entities
 {
-    class Brand
+    public class Brand
     {
     }
 }
