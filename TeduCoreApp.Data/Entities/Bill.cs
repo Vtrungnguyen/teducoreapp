@@ -40,9 +40,6 @@ namespace TeduCoreApp.Data.Entities
             Status = status;
             CustomerId = customerId;
         }
-                [Required]
-        [MaxLength(256)]
-        public int Id { get; set; }
         [Required]
         [MaxLength(256)]
         public string CustomerName { set; get; }

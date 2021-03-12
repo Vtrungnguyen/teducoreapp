@@ -6,9 +6,10 @@ using System.Text;
 namespace TeduCoreApp.Data.Entities
 {
     [Table("BillDetails")]
-    public class BillDetail: DomainEntity<int>
+    public class BillDetail : DomainEntity<int>
     {
         public BillDetail() { }
+  
         public BillDetail(int id, int billId, int productId, int quantity, decimal price, int colorId, int sizeId)
         {
             Id = id;
@@ -29,6 +30,7 @@ namespace TeduCoreApp.Data.Entities
             SizeId = sizeId;
         }
 
+        public int BillId { set; get; }
 
         public int ProductId { set; get; }
 

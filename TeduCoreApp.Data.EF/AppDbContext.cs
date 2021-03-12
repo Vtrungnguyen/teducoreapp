@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TeduCoreApp.Data.Entities
+namespace TeduCoreApp.Data.EF
 {
-    class Menu
+    class AppDbContext
     {
     }
 }

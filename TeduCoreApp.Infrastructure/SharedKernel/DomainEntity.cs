@@ -2,11 +2,11 @@
 {
     public class DomainEntity<T>
     {
-        public T ID { get; set; }
+        public T Id { get; set; }
 
         public bool IsTransient()
         {
-            return ID.Equals(default(T));
+            return Id.Equals(default(T));
         }
     }
 }
